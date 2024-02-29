@@ -1,0 +1,435 @@
+@font-face {
+  font-family: 'Mulish-SemiBoldItalic';
+  src: url('fonts/Mulish-SemiBoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Mulish-Bold';
+  src: url('fonts/Mulish-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Mulish-Medium';
+  src: url('fonts/Mulish-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Mulish-Light';
+  src: url('fonts/Mulish-Light.ttf');
+}
+
+/************** CSS Reset **************/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/************** End CSS Reset **************/
+
+
+body {
+  background-color: #FFFBF6;
+  
+}
+
+/************** TIDE-overview **************/
+#TIDE-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.background-image {
+  grid-column: 1 / span 2; 
+  width: 100%; 
+  height: auto; 
+  z-index: 1;
+}
+
+.background-image, .overlay1, .overlay2, .nav-overlay {
+  grid-row: 1;
+}
+
+.overlay1 {
+  z-index: 2;
+  grid-column: 1; 
+  margin-left: 17%;
+  margin-top: 30%; 
+}
+
+.overlay2 {
+  z-index: 2;
+  grid-column: 2; 
+  margin-top: 160%; 
+}
+
+.nav-overlay {
+  font-family: 'Mulish-Medium',sans-serif;
+  font-size: 2vw;
+  color: #FFFBF6;
+  z-index: 3;
+  grid-column: 2;
+  margin-top: 2%; 
+  margin-left: 30%;
+}
+
+.title-image {
+  max-width: 100%;
+  margin-bottom: 1vw;
+}
+
+.overview-text {
+  font-family: 'Mulish-Light',sans-serif;
+  text-align: left;
+  font-size: 1.5vw;
+  line-height: 1.5;
+  color: #FFFBF6;
+  max-width: 100%;
+}
+
+.slogan1 {
+  font-family: 'Mulish-SemiBoldItalic',sans-serif;
+  text-align: center;
+  font-size: 1.9vw;
+  line-height: 1.5;
+  color: #87412B;
+  max-width: 70%;
+}
+
+nav a {
+  margin-right: 50px;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+a:link,a:visited {
+  color:#FFFBF6;
+}
+
+a:hover {
+  color: #F4C9BF;
+}
+/************** End TIDE-overview **************/
+
+/************** TIDE-Product **************/
+#TIDE-Product {
+  position: relative;
+  width: 100%; 
+  height: auto; 
+  margin-top: 10vw;
+}
+
+.product-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.product-title {
+  font-family: 'Mulish-Bold',sans-serif;
+  text-align: center;
+  font-size: 4vw;
+  color: #87412B;
+  margin-bottom: 3vw;
+}
+
+.product-description {
+  font-family: 'Mulish-Light',sans-serif;
+  text-align: center;
+  font-size: 1.6vw;
+  line-height: 1.5;
+  color: #87412B;
+  max-width: 60%;
+  margin-bottom: 7vw;
+}
+
+.product-img, .overlay3 {
+  grid-row: 1;
+}
+
+.product-overlay-container {
+  display: grid;
+  position: relative;
+}
+
+.product-img {
+  grid-column: 1 / -1; 
+  z-index: 1; 
+}
+
+.product-image1, .product-image2 {
+  width: 100%; 
+  height: auto;
+}
+
+.product-image1 {
+  margin-bottom: 2vw;
+}
+
+.overlay3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-column: 1 / -1; 
+  z-index: 2; 
+  color: #F4C9BF;
+  font-size: 2.3vw;
+  font-family: 'Mulish-Medium',sans-serif;
+}
+
+.I-text, .II-text, .III-text {
+  text-align: center;
+}
+
+.I-text {
+  margin-top: 130%; 
+}
+
+.II-text {
+  margin-top: 160%; 
+}
+
+.III-text {
+  margin-top: 190%; 
+}
+/************** End TIDE-Product **************/
+
+/************** TIDE-Using Scenario **************/
+
+#Using-scenario {
+  position: relative;
+  width: 100%; 
+  height: auto; 
+  margin-top: 10vw;
+}
+
+.US-title {
+  font-family: 'Mulish-Bold',sans-serif;
+  text-align: center;
+  font-size: 3.3vw;
+  color: #BB7B71;
+  margin-bottom: 3vw;
+}
+
+.US-image, .US-text-overlay {
+  grid-row: 1;
+}
+
+.US-overlay {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  position: relative;
+}
+
+.US-image {
+  grid-column: 1 / -1; 
+  justify-content: center; 
+  display: flex;
+  z-index: 1;
+}
+
+.US1-4 {
+  width: 90%;
+  height: auto;
+  display: block;
+}
+
+.US-text-overlay {
+  font-family: 'Mulish-Light',sans-serif;
+  color: #87412B;
+  font-size: 1.7vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1 / -1;
+  z-index: 2; 
+}
+
+.step1, .step3 {
+  grid-column: 2; 
+  margin-left: 35%;
+}
+
+.step2, .step4 {
+  grid-column: 1; 
+  margin-left: 14%;
+}
+
+.step1 {
+  max-width: 50%;
+  margin-top: 25%;
+}
+
+.step2 {
+  max-width: 55%;
+  margin-top: 30%;
+}
+
+.step3 {
+  margin-top: 85%;
+}
+
+.step4 {
+  max-width: 55%;
+  margin-top: 30%;
+}
+
+/************** End TIDE-Using Scenario **************/
+
+/************** TIDE-APP **************/
+#TIDE-APP {
+  position: relative;
+  width: 100%; 
+  height: auto; 
+  margin-top: 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.circle-pattern {
+  max-width: 50%;
+}
+
+.app-title {
+  font-family: 'Mulish-Bold',sans-serif;
+  text-align: center;
+  font-size: 4vw;
+  color: #87412B;
+  margin-bottom: 3vw;
+}
+
+.app-description {
+  font-family: 'Mulish-Light',sans-serif;
+  text-align: center;
+  font-size: 1.6vw;
+  line-height: 1.5;
+  color: #87412B;
+  max-width: 60%;
+  margin-bottom: 7vw;
+}
+
+.icons {
+  max-width: 70%;
+  margin-bottom: 10vw;
+}
+
+.pattern-overlay-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  position: relative;
+}
+
+.curve-pattern, .overlay6{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.curve-pattern {
+  margin-top: 5vw;
+  z-index: 1;
+  width: 100%;
+}
+
+.overlay6 {
+  z-index: 2;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center; 
+}
+
+.mock-up1 {
+  width:93%;
+  display: block;
+  margin-bottom: 2vw;
+}
+
+.mock-up2 {
+  width:100%;
+}
+
+.mock-up3 {
+  width:100%;
+  z-index: 1;
+  position: relative;
+}
+
+.overlay7 {
+  position: relative;
+  z-index: 2;
+  width: 57%;
+  text-align: center;
+  margin-top: -25vw;
+  font-size: 3vw;
+  line-height: 1.4;
+  font-family: 'Mulish-SemiBoldItalic',sans-serif;
+}
+
+/************** End TIDE-APP **************/
+
+/* Media Query */
+
+@media (max-width: 768px) {
+  .nav-overlay {
+    top: 0.7%;
+    font-size: 10px;
+  }
+
+  nav a {
+    margin-right: 20px;
+  }
+
+  .overview-text {
+    font-size: 10px; 
+  }
+
+  .slogan1 {
+    font-size: 13px;
+  }
+
+  #TIDE-Product {
+    margin-top: 70px;
+  }
+
+  .product-description {
+    font-size: 10px;
+  }
+
+  .overlay3 {
+    font-size: 13px;
+  }
+
+  .US-text-overlay {
+    font-size: 10px;
+  }
+  
+  .US1-4 {
+    padding: 3%;
+  }
+
+  .app-description {
+    font-size: 10px;
+  }
+}
