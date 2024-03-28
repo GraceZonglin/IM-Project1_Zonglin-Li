@@ -58,6 +58,23 @@ body {
   position: relative;
 }
 
+.Language-and-Color {
+  /* font-family: 'Mulish-Medium',sans-serif;
+  font-size: 2vw;
+  color: #FFFBF6; */
+  display: flex; 
+  grid-column: 2;
+  grid-row: 1;
+  z-index: 5; 
+  align-self: start;
+  justify-self: start;
+  margin-left: 78%;
+  margin-top: 2.3%;
+  width: 5%;
+  height: auto;
+  gap: 110%;
+}
+
 .background-image {
   grid-column: 1 / span 2; 
   width: 100%; 
@@ -65,7 +82,7 @@ body {
   z-index: 1;
 }
 
-.background-image, .overlay1, .overlay2, .nav-overlay {
+.background-image, .overlay1, .overlay2, .nav-overlay, .Language-and-Color {
   grid-row: 1;
 }
 
@@ -89,8 +106,10 @@ body {
   z-index: 3;
   grid-column: 2;
   margin-top: 2%; 
-  margin-left: 30%;
+  margin-left: 10%;
 }
+
+
 
 .title-image {
   max-width: 100%;
@@ -104,9 +123,11 @@ body {
   line-height: 1.5;
   color: #FFFBF6;
   max-width: 100%;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
-.slogan1 {
+#slogan1 {
   font-family: 'Mulish-SemiBoldItalic',sans-serif;
   text-align: center;
   font-size: 1.9vw;
@@ -263,6 +284,8 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1 / -1;
   z-index: 2; 
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .step1, .step3 {
